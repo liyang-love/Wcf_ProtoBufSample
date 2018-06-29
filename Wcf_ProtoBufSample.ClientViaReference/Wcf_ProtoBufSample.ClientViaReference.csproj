@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D00C4FD-7F89-4217-9453-DC2224229171}</ProjectGuid>
+    <ProjectGuid>{AB17F9D2-CCC7-49EC-A4EA-4F9336D503F9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Wcf_ProtoBufSample.HOST</RootNamespace>
-    <AssemblyName>Wcf_ProtoBufSample.HOST</AssemblyName>
+    <RootNamespace>Wcf_ProtoBufSample.ClientViaReference</RootNamespace>
+    <AssemblyName>Wcf_ProtoBufSample.ClientViaReference</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -52,12 +52,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Wcf_ProtoBufSample.Service\Wcf_ProtoBufSample.Service.csproj">
-      <Project>{0c2da7de-91f3-470b-8b33-ad0e912a4d2e}</Project>
-      <Name>Wcf_ProtoBufSample.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

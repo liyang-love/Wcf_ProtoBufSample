@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8D00C4FD-7F89-4217-9453-DC2224229171}</ProjectGuid>
+    <ProjectGuid>{34429EE4-40DB-49FA-953E-279C72F4238F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Wcf_ProtoBufSample.HOST</RootNamespace>
-    <AssemblyName>Wcf_ProtoBufSample.HOST</AssemblyName>
+    <RootNamespace>Wcf_ProtoBufSample.ClientViaMetaData</RootNamespace>
+    <AssemblyName>Wcf_ProtoBufSample.ClientViaMetaData</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,14 +31,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="protobuf-net, Version=2.3.14.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <HintPath>..\packages\protobuf-net.2.3.14-alpha1\lib\net40\protobuf-net.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,16 +42,6 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Wcf_ProtoBufSample.Service\Wcf_ProtoBufSample.Service.csproj">
-      <Project>{0c2da7de-91f3-470b-8b33-ad0e912a4d2e}</Project>
-      <Name>Wcf_ProtoBufSample.Service</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
